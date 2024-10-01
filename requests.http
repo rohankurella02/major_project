@@ -1,0 +1,21 @@
+POST http://localhost:4000/events/create-event
+Content-Type: application/json
+
+{
+    "title": "TedX",
+    "description": "Event 1 description",
+    "startDate": "2021-12-12",
+    "endDate": "2021-12-12",
+    "location": "Event 1 location",
+    "category": "Tech",
+    "medium": "offline"
+}
+
+#######
+GET http://localhost:4000/events/get-events
+
+#######
+GET http://localhost:4000/events/get-event/65db4344c51f880fb1902505
+
+#######
+GET http://localhost:4000/events/get-events-by-category/Tech
